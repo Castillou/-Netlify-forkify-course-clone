@@ -35,7 +35,6 @@ export default class View {
 
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
-      // console.log(curEl, newEl.isEqualNode(curEl), newEl.firstChild);
 
       // Updates changed TEXT
       if (
@@ -44,7 +43,6 @@ export default class View {
         newEl.firstChild.nodeValue &&
         newEl.firstChild.nodeValue.trim() !== ''
       ) {
-        // console.log('🔥', newEl.firstChild.nodeValue.trim());
         curEl.textContent = newEl.textContent;
       }
 
